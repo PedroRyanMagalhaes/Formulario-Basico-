@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 text-align:center id="titulo">Você pode entrar na minha <strong>FESTA?</strong></h1>
+        <p id="subtitulo">Me diga suas infos</p> <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo"> 
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="Celular"><strong>Celular</strong></label>
+            <input type="tel" name="Celular" id="Celular" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Você?</strong></label>
+            <label>
+                <input type="radio" name="fumaebebe" value="Fuma">Fuma
+            </label>
+            <label>
+                <input type="radio" name="fumaebebe" value="Bebe">Bebe
+            </label>
+            <label>
+                <input type="radio" name="fumaebebe" value="Fuma e Bebe">Fuma e Bebe
+            </label>
+            <label>
+                <input type="radio" name="fumaebebe" value="Nenhum">Nenhum
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="Idade"><strong>Idade</strong></label>
+            <select id="Idade">
+                <option selected disabled value="">Selecione</option>
+                <option>+18</option>
+                <option>-18</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="checkbox">
+                <label>Selecione as músicas que você gosta</label> <br><br>
+                <input type="checkbox" name="Tecnologia1" id="Tecnologia1" value="Funk">
+                <label for="Tecnologia2">Funk</label>
+                <input type="checkbox" name="Tecnologia2" id="Tecnologia2" value="Rap/Trap">
+                <label for="Tecnologia3">Rap/Trap</label>
+                <input type="checkbox" name="Tecnologia3" id="Tecnologia3" value="Samba">
+                <label for="Tecnologia4">Samba</label>
+                <input type="checkbox" name="Tecnologia4" id="Tecnologia4" value="Pagode">
+                <label for="Tecnologia5">Pagode</label>
+                <input type="checkbox" name="Tecnologia5" id="Tecnologia5" value="Pop 2000s/10s">
+                <label for="Tecnologia6">Pop 2000s/10s</label>
+                <input type="checkbox" name="Tecnologia6" id="Tecnologia6" value="Indie">
+                <label for="Tecnologia6">Indie</label>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label><strong>Uma caracteristica:</strong></label>
+            <textarea row="10"style="width: 12cm;" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <br>
+        <div class="campo">
+            <button class="botao" type="submit">Concluido</button>
+        </div>
+    </form>
+</body>
+</html>
